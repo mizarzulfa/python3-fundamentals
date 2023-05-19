@@ -5,19 +5,10 @@ age = input("What is your current age")
 # weeks = 52
 # month = 12
 
-age = int(age)
-day = age * 365
-weeks = age * 52
-month = age * 12
-
-# 90 y/o limit
-day_limit = 90 * 365
-weeks_limit = 90 * 52
-month_limit = 90 * 12
-
-remain_day = day_limit - day
-remain_weeks = weeks_limit - weeks
-remain_months = month_limit - month
+current_age = 90 - int(age)  # assume human lifespan --> 90y/0
+remain_day = current_age * 365
+remain_weeks = current_age * 52
+remain_months = current_age * 12
 
 x = remain_day
 y = remain_weeks
