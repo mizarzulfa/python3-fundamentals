@@ -18,6 +18,7 @@ if size == "S":
     if add_pepperoni == "Y":
         val += 2
 
+
 if size == "M":
     val = 20
     if add_pepperoni == "Y":
