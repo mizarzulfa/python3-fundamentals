@@ -17,7 +17,8 @@ z = remain_months
 print(f"You have {x} days, {y} weeks, and {z} months left.")
 
 
-'''
+print('''
+---------------
 Description:
 In this project, I created a simple Life Tracker to help gain a better understanding of the limited time we have in our lives.
 the program calculates the remaining time you have in days, weeks, and months based on your current age.
@@ -39,4 +40,4 @@ Code Explanation:
 
 Note: This is a simple implementation that assumes a year has 365 days, 52 weeks, and 12 months. It does not take into account leap years or different month lengths.
 
-'''
+''')

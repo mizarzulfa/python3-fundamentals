@@ -17,7 +17,8 @@ elif BMI > 18.5:
 else:
     print(f"Your BMI is {round(BMI)}, you are underweight.")
 
-'''
+print('''
+---------------
 Description:
 This Python program calculates and classifies your Body Mass Index (BMI) based on ur height and weight.
 It provides a brief assessment of the weight status, ranging from underweight to clinically obese.
@@ -36,4 +37,4 @@ Note: This BMI calculator is a good way to practice basic input/output
 operations and conditional statements in Python.
 Feel free to explore and modify the code as you continue learning!
 
-'''
+''')

@@ -31,8 +31,8 @@ else:
 
 # else:
 #     print("Not leap year.")
-
-'''
+print('''
+---------------
 Leap Year Checker in Python
 
 Description:
@@ -61,4 +61,4 @@ Code Explanation:
 
 Note: The code assumes the user enters a valid integer as input. No error handling is implemented for invalid inputs in this code snippet.
 
-'''
+''')

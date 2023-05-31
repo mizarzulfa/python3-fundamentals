@@ -18,7 +18,8 @@ res = each_person_no_tip
 final_message = print(F"each person should pay: ${round(res, 2)}")
 
 
-'''
+print('''
+---------------
 Tip Calculator - Splitting the Bill Fairly
 
 Description:
@@ -45,4 +46,4 @@ Code Explanation:
 8. We add the tip amount to the amount each person would pay without the tip (each_person_no_tip) to get the final amount each person should contribute. The result is stored in res.
 9. The final amount is rounded to two decimal places using the round() function.
 10. We print a message using string formatting (F"") to display the final amount each person should pay (${round(res, 2)}).
-'''
+''')

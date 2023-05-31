@@ -6,8 +6,9 @@ print(
     f"Your score is {score}, Your height is {height}, You're winning right? {isWinning}")
 
 
-'''
-In the code snippet, \
+print('''
+---------------
+In the code snippet,
 I initialized three variables: score, height, and isWinning.
 The score variable is set to 0, representing a player's score in a game.
 The height variable is assigned a value of 1.9, representing the player's height in meters.
@@ -19,4 +20,4 @@ The output of this code snippet would be:
 
 "Your score is 0, Your height is 1.9, You're winning right? True
 
-'''
+''')

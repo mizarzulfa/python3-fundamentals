@@ -37,7 +37,8 @@ final = val
 print(f"Your final bill is: ${final}")
 
 
-'''
+print('''
+---------------
 Pizza Delivery app with Size, Toppings, and Extra Cheese
 
 Description:
@@ -65,4 +66,4 @@ Code Explanation:
 9. Finally, the program prints the final bill using an f-string to display the cost to the user.
 
 Note: This is a basic example and does not include input validation or error handling.
-'''
+''')

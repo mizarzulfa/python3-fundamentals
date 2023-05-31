@@ -8,7 +8,8 @@ if height >= 120:
 else:
     print("sorry, you have to grow taller before you can ride ")
 
-'''
+print('''
+---------------
 The code checks the value of 'height' against three conditions. 
 If height is greater than or equals to 120, the statement under the first 'if' block is executed.
 If it is not, the condition in the first 'elif' block is evaluated.
@@ -34,4 +35,4 @@ in C#, the if and else blocks are enclosed within curly braces {}, whereas in Py
 indentation is used to define the blocks of code.
 This difference in formatting is important to keep in mind when transitioning between the two languages.
 
-'''
+''')

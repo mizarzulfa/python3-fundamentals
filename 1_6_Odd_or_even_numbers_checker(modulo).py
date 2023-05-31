@@ -8,7 +8,8 @@ else:
     print("This is an odd number.")
 
 
-'''
+print('''
+---------------
 The modulo operator in Python is represented by the percentage sign (%).
 It calculates the remainder when one number is divided by another.
 
@@ -34,4 +35,4 @@ the result will be 2 because it represents the remainder.
 So, the modulo operator helps us find the remainder when dividing two numbers.
 It can be useful in various programming scenarios, such as checking if a number is even or odd, 
 or grouping items into equal-sized portions.
-'''
+''')

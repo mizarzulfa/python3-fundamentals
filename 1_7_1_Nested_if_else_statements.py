@@ -13,7 +13,8 @@ else:
     print("Sorry, Come back later!")
 
 
-'''
+print('''
+---------------
 Description:
 This Python program calculates the admission fee for an amusement park ride based on the user's height and age.
 It demonstrates the use of nested if statements to determine the appropriate price based on the conditions.
@@ -37,4 +38,4 @@ Code Explanation:
 
 Note: The line commented out, "# print("You're able to ride!")", is unnecessary and can be removed since it does not affect the program's functionality.
 
-'''
+''')

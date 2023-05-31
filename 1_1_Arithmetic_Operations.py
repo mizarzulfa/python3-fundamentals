@@ -11,7 +11,8 @@ easy_peasy /= 4.2  # Divide by 4.2
 print(round(easy_peasy, 2))
 
 
-'''
+print('''
+---------------
 This code demonstrates basic arithmetic operations in Python.
 It performs a series of calculations on the variable easy_peasy and prints the result.
 
@@ -29,4 +30,4 @@ Assignment operators (/=, +=, *=) for performing operations and updating variabl
 Arithmetic operations in Python, such as division and multiplication.
 Rounding numbers using the round() function.
 
-'''
+''')
