@@ -28,7 +28,8 @@ else:
     print(f"Your score is {Calculation}.")
 
 
-'''
+print('''
+---------------
 Description:
 This program is a simple Love Calculator that determines the compatibility
 between two people based on their names. It calculates a score by counting the occurrences of specific letters
@@ -59,4 +60,4 @@ Code Explanation:
 This program is a basic implementation and does not consider various factors that influence relationships.
 It is purely intended for fun and educational purposes.
 
-'''
+''')
