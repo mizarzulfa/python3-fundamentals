@@ -18,7 +18,6 @@ true_Total = count_T + count_R + count_U + count_E
 love_Total = count_L + count_O + count_V + count_EE
 
 Calculation = int(str(true_Total) + str(love_Total))
-# print(f"Love Score is {Calculation}")
 
 if Calculation < 10 or Calculation > 90:
     print(
@@ -27,3 +26,37 @@ elif Calculation >= 40 and Calculation <= 50:
     print(f"Your score is {Calculation}, you are alright together.")
 else:
     print(f"Your score is {Calculation}.")
+
+
+'''
+Description:
+This program is a simple Love Calculator that determines the compatibility
+between two people based on their names. It calculates a score by counting the occurrences of specific letters
+in both names and then combines them to form a final score.
+The program provides different messages based on the calculated score,
+indicating the level of compatibility between the individuals.
+
+Learning Focus:
+- focusing on basic input/output
+- string manipulation
+- mathematical operations
+- conditional statements
+- Logical Operators
+
+Code Explanation:
+1. The program starts by printing a welcome message and prompting the user to enter their name and the name of their partner.
+2. It then proceeds to count the occurrences of specific letters ("TRUE" and "LOVE") in both names using the `count()` function.
+    The counts for each letter are stored in separate variables.
+3. The total counts for "TRUE" and "LOVE" are calculated by summing the individual counts.
+4. The `true_Total` and `love_Total` variables store the combined counts for "TRUE" and "LOVE", respectively.
+5. The `Calculation` variable is created by concatenating the `true_Total` and `love_Total` variables as strings and converting them back to an integer.
+6. The program then uses conditional statements (`if`, `elif`, and `else`) to determine the compatibility score and provide an appropriate message based on the calculated score.
+    - If the score is less than 10 or greater than 90, it outputs a message indicating a strong incompatibility.
+    - If the score is between 40 and 50 (inclusive), it outputs a message indicating moderate compatibility.
+    - For all other scores, it simply outputs the calculated score.
+7. The program prints the final result along with the calculated score.
+
+This program is a basic implementation and does not consider various factors that influence relationships.
+It is purely intended for fun and educational purposes.
+
+'''
