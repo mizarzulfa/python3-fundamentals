@@ -15,3 +15,8 @@ state_of_america[3] = "tokyo"  # list update
 print(state_of_america[3])  # Accessing list order no.3
 
 print(state_of_america)
+
+remove = input("erase all list data ? Y or X")
+if remove == "y" or remove == "Y":
+    state_of_america.clear()
+print(state_of_america)
