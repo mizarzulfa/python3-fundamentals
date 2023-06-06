@@ -16,6 +16,8 @@ print(state_of_america[3])  # Accessing list order no.3
 
 print(state_of_america)
 
+print(len(state_of_america))  # Get the total list
+
 remove = input("erase all list data ? Y or X")
 if remove == "y" or remove == "Y":
     state_of_america.clear()
