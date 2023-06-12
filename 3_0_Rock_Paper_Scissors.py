@@ -31,9 +31,7 @@ scissors = '''
 ask = input(
     "What do you choose? Type '0' for Rock, '1' for Paper or '2' for Scissors.")
 
-val_rock = 0
-val_paper = 0
-val_scissors = 0
+val_rock = val_paper = val_scissors = error_input = 0
 
 if ask == "0":
     print(rock)
@@ -46,15 +44,19 @@ elif ask == "2":
     val_scissors = 1
 else:
     print("Input errors!")
+    error_input = 1
 
 # random pick: computer
-print("Computer Chose:")
+if error_input != 1:
+    print("Computer Chose:")
 
 list_of_hand = [rock, paper, scissors]
 var_random = random.randint(1, 3) - 1
 
 computer_respon = list_of_hand[var_random]
-print(computer_respon)
+
+if error_input != 1:
+    print(computer_respon)
 
 # conditional
 if val_rock == 1 and var_random == 1:
