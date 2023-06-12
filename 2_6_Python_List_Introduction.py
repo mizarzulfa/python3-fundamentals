@@ -20,5 +20,5 @@ print(len(state_of_america))  # Get the total list
 
 remove = input("erase all list data ? Y or X")
 if remove == "y" or remove == "Y":
-    state_of_america.clear()
+    state_of_america.clear()  # clear list method
 print(state_of_america)
