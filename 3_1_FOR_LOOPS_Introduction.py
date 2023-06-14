@@ -8,6 +8,17 @@ for var_loops in vegetables:
     print(var_loops)
     print(var_loops + " bro")
 
+# -- OUTPUT -- #
+# carrot
+# carrot bro
+# broccoli
+# broccoli bro
+# tomato
+# tomato bro
+# spinach
+# spinach bro
+# cabbage
+# cabbage bro
 
 print('''
 ---------------
