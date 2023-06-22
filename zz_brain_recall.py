@@ -1,10 +1,8 @@
-list_a = ["📦","📦","X","📦"]
-list_b = ["⏺️","⏺️","⏺️","⏺️"]
-list_c = ["🏀","🏀","🏀","🏀"]
+from example_of_my_own_module import callme
+import example_of_my_own_module
 
-combine_list = [list_a,list_b,list_c]
+res = callme("zas")
 
-overwrite = "💩"
-combine_list[0][0] = overwrite
+print(res)
 
-print(list_a)
+print(example_of_my_own_module.hello)

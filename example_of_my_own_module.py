@@ -1,5 +1,5 @@
-def callme():
-    data = "hello"
+def callme(a):
+    data = a + " anajy"
     return data
 
 
