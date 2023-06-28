@@ -1,4 +1,4 @@
-# SAMPLE ONLY
+# SAMPLE ONLY -don't run
 
 
 def turn_right():
