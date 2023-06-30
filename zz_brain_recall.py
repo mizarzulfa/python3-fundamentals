@@ -1,8 +1,17 @@
-from example_of_my_own_module import callme
-import example_of_my_own_module
+def turn_right():
+    turn_left()
+    turn_left()
+    turn_left()
 
-res = callme("zas")
 
-print(res)
+while not at_goal():
 
-print(example_of_my_own_module.hello)
+    if right_is_clear():
+        turn_right()
+        move()
+        turn_right()
+        move()
+    elif wall_in_front():
+        turn_left()
+    else:
+        move()
