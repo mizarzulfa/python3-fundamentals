@@ -8,12 +8,12 @@ chosen_word = random.choice(word_list)
 
 
 # TODO-2 - Ask the user to guess a letter and assign their answer to a variable called guess. Make guess lowercase.
-guess = input("Guess the name!, input your letter: ").lower()
+guess = input("Guess a letter: ").lower()
 
 # TODO-3 - Check if the letter the user guessed (guess) is one of the letters in the chosen_word.
 for check in chosen_word:
     # print(check)
     if check == guess:
-        print("correct")
+        print("right")
     else:
-        print("nothing")
+        print("wrong")
