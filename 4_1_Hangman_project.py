@@ -1,19 +1,28 @@
-# Draw based on diagram
-# 1
+# 2
 import random
 word_list = ["aardvark", "baboon", "camel"]
 
-# TODO-1 - Randomly choose a word from the word_list and assign it to a variable called chosen_word.
 chosen_word = random.choice(word_list)
+print(f"hint for testing: {chosen_word}")
 
-
-# TODO-2 - Ask the user to guess a letter and assign their answer to a variable called guess. Make guess lowercase.
 guess = input("Guess a letter: ").lower()
 
-# TODO-3 - Check if the letter the user guessed (guess) is one of the letters in the chosen_word.
+new_words = []
+
 for check in chosen_word:
     # print(check)
     if check == guess:
-        print("right")
+        new_words.append(check)
+        # print("right")
     else:
-        print("wrong")
+        new_words.append("_")
+
+# Convert list to string using for loop method
+    # words_combine = ""
+    # for i in new_words:
+    #     words_combine = words_combine + i
+    # print(words_combine)
+
+# Convert list to string using join function
+res = ' '.join(new_words)
+print(res)
