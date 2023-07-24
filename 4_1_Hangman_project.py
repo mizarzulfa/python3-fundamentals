@@ -24,22 +24,27 @@ while not underscore_remain:  # alt : while not underscore_remain:
         if chosen_word[check] == guess:
             new_words[check] = chosen_word[check]
 
-    print(new_words)
-
-    if guess in chosen_word:
-        print(stages[stages_data])
-
     if guess not in chosen_word:
         stages_data -= 1
-        print(stages[stages_data])
+        print(
+            f"You guessed {guess}, that's not in the word. You lose a life :(")
+        #
         if stages_data == 0:
             underscore_remain = True
             print("You lose.")
+
+    str_new_words = ' '.join(new_words)
+    print(str_new_words)
+
+    print(stages[stages_data])
 
     if "_" not in new_words:
         print("You win.")
         underscore_remain = True
 
+# # Convert list to string using join function
+# res = ' '.join(new_words)
+# print(res)
 
 ## Second METHOD ##
 
@@ -61,7 +66,3 @@ while not underscore_remain:  # alt : while not underscore_remain:
 # for i in new_words:
 #     words_combine = words_combine + i
 # print(words_combine)
-
-# Convert list to string using join function
-# res = ' '.join(new_words)
-# print(res)
