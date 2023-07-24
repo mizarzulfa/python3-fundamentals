@@ -1,66 +1,11 @@
 import random
+from Extras.hangman_art import stages, logo
+from Extras.hangwan_words import word_list
 
-word_list = ["aardvark", "baboon", "camel"]
+print(logo)
+# word_list = ["aardvark", "baboon", "camel"]
 chosen_word = random.choice(word_list)
 print(f"hint for testing: {chosen_word}")
-
-stages = ['''
-  +---+
-  |   |
-  O   |
- /|\  |
- / \  |
-      |
-=========
-''', '''
-  +---+
-  |   |
-  O   |
- /|\  |
- /    |
-      |
-=========
-''', '''
-  +---+
-  |   |
-  O   |
- /|\  |
-      |
-      |
-=========
-''', '''
-  +---+
-  |   |
-  O   |
- /|   |
-      |
-      |
-=========''', '''
-  +---+
-  |   |
-  O   |
-  |   |
-      |
-      |
-=========
-''', '''
-  +---+
-  |   |
-  O   |
-      |
-      |
-      |
-=========
-''', '''
-  +---+
-  |   |
-      |
-      |
-      |
-      |
-=========
-''']
-
 stages_data = 6
 new_words = []
 
@@ -70,9 +15,11 @@ for i in range(len(chosen_word)):
 ## FIRST METHOD ##
 
 underscore_remain = False
-while underscore_remain == False:  # alt : while not underscore_remain:
+while not underscore_remain:  # alt : while not underscore_remain:
     guess = input("Guess a letter: ").lower()
 
+    # updates the 'new_words' list by replacing the correct occurrences of the 'guess' character
+    # in the 'chosen_word'. The updated 'new_words' list contains the guessed characters at their correct positions.
     for check in range(len(chosen_word)):
         if chosen_word[check] == guess:
             new_words[check] = chosen_word[check]
@@ -85,14 +32,13 @@ while underscore_remain == False:  # alt : while not underscore_remain:
     if guess not in chosen_word:
         stages_data -= 1
         print(stages[stages_data])
+        if stages_data == 0:
+            underscore_remain = True
+            print("You lose.")
 
     if "_" not in new_words:
         print("You win.")
         underscore_remain = True
-
-    if stages_data == 0:
-        underscore_remain = True
-        print("You lose.")
 
 
 ## Second METHOD ##
