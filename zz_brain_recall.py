@@ -1,17 +1,4 @@
-def turn_right():
-    turn_left()
-    turn_left()
-    turn_left()
+from example_of_my_own_module import callme, hello
 
-
-while not at_goal():
-
-    if right_is_clear():
-        turn_right()
-        move()
-        turn_right()
-        move()
-    elif wall_in_front():
-        turn_left()
-    else:
-        move()
+print(callme("samo"))
+print(hello)
