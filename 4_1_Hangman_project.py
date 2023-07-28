@@ -1,4 +1,5 @@
 import random
+import os as clear_terminal
 from Extras.hangman_art import stages, logo
 from Extras.hangwan_words import word_list
 
@@ -17,6 +18,8 @@ for i in range(len(chosen_word)):
 underscore_remain = False
 while not underscore_remain:  # alt : while not underscore_remain:
     guess = input("Guess a letter: ").lower()
+    
+    clear_terminal.system('cls' if clear_terminal.name == 'nt' else 'clear')
 
     # updates the 'new_words' list by replacing the correct occurrences of the 'guess' character
     # in the 'chosen_word'. The updated 'new_words' list contains the guessed characters at their correct positions.
