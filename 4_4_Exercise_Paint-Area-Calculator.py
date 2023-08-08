@@ -18,4 +18,3 @@ coverage = 5
 
 value = paint_calc(height=height_,width=wiidth_,cover=coverage)
 print(f"You'll need {value} cans of paint.")
-
