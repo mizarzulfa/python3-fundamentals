@@ -27,9 +27,9 @@
 # specific_call(123)
 
 # METHOD 2 -- Specific Data Types RAISE ERROR!
-def specific_call(intejer: str):
-    if not isinstance(intejer, str):
-        raise TypeError("Invalid input! Please provide an integer.")
-    print(f"Hello bro {intejer}")
+# def specific_call(intejer: str):
+#     if not isinstance(intejer, str):
+#         raise TypeError("Invalid input! Please provide an integer.")
+#     print(f"Hello bro {intejer}")
         
-specific_call("Mizar")
+# specific_call("Mizar")
