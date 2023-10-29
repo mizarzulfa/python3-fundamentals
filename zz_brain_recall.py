@@ -1,24 +1,19 @@
-def data(num1, num2):
-    jum = num1 + num2
-    return jum
-
-# Class definition
-class koplak:
-    def __init__(self, name="add your name here"):
-        self.name = name
-
-    def data(self, nilai1, nilai2):
-        res = data(nilai1, nilai2)
-        return res
+def tambah(n1,n2):
+    a = n1 + n2
+    print(a)
 
 
+class data:
+    def __init__(self) -> None:
+        self.anj = tambah(1,1)
+        self.unj = tambah(5,1)
+    
+    def pertambahan(self):
+        tambah(12,12)
+    
+objek = data()
 
-# Instantiate the class without providing a name
-ahay = koplak()
+has = objek.pertambahan()
 
-print(ahay.name)  # This will print: default_name
-
-# Call the data method
-final = ahay.data(19, 19)  # This will print: kocak
-
-print(final)
+objek.anj
+objek.unj
