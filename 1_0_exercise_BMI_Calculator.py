@@ -12,6 +12,8 @@ print(int(BMI))
 # The code calculates the Body Mass Index (BMI) based on the weight and height entered by the user.
 # Here's a step-by-step explanation:
 
+#anjay
+
 # 1. The user is prompted to enter their weight in kilograms using the `input()` function. The entered value is stored in the `weight` variable.
 # 2. The user is prompted to enter their height in meters using the `input()` function. The entered value is stored in the `height` variable.
 # 3. The `weight` variable is converted to an integer using `int(weight)` to ensure it is treated as a numerical value.
